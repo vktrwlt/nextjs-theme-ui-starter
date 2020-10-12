@@ -1,14 +1,12 @@
-import { addDecorator } from '@storybook/react';
+import { addDecorator } from '@storybook/react'
 //**@jsx jsx */
-import { jsx, ThemeProvider } from 'theme-ui';
-import theme from '../theme/theme.js';
+import { jsx, ThemeProvider } from 'theme-ui'
+import theme from '../src/utils/theme/theme'
 
 addDecorator(storyFn => (
-  <ThemeProvider theme={theme}>
-    {storyFn()}
-  </ThemeProvider>
-));
+  <ThemeProvider theme={theme}>{storyFn()}</ThemeProvider>
+))
 
 export const parameters = {
-  actions: { argTypesRegex: "^on[A-Z].*" },
+  actions: { argTypesRegex: '^on[A-Z].*' }
 }

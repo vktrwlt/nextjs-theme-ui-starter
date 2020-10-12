@@ -6,17 +6,17 @@ export const base = {
     body:
       'system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif',
     heading: 'inherit',
-    monospace: 'Menlo, monospace',
+    monospace: 'Menlo, monospace'
   },
   fontSizes: [12, 14, 16, 20, 24, 32, 48, 64, 96],
   fontWeights: {
     body: 400,
     heading: 700,
-    bold: 700,
+    bold: 700
   },
   lineHeights: {
     body: 1.5,
-    heading: 1.5,
+    heading: 1.5
   },
   colors: {
     text: '#000',
@@ -24,23 +24,23 @@ export const base = {
     primary: '#07c',
     secondary: '#30c',
     danger: 'red',
-    muted: '#646464',
+    muted: '#646464'
   },
   buttons: {
     primary: {
       color: 'background',
       bg: 'primary',
       '&:hover': {
-        bg: 'text',
+        bg: 'text'
       }
     },
     secondary: {
       color: 'background',
       bg: 'secondary',
       '&:hover': {
-        bg: 'text',
+        bg: 'text'
       }
-    },
+    }
   },
   messages: {
     primary: {
@@ -60,16 +60,16 @@ export const base = {
     root: {
       fontFamily: 'body',
       lineHeight: 'body',
-      fontWeight: 'body',
+      fontWeight: 'body'
     }
-  },
+  }
 }
 
 const theme = {
   ...base,
   styles: {
-    ...base.styles,
-  },
+    ...base.styles
+  }
 }
 
-export default theme;
+export default theme
